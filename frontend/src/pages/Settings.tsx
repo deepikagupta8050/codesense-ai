@@ -9,7 +9,7 @@ import {
   EyeOff
 } from 'lucide-react'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://codesense-ai-2bu3.onrender.com/api'
 
 
 
@@ -517,7 +517,7 @@ if (s.code_explanations !== undefined)
         onClick={() => {
 
           window.location.href =
-            'http://localhost:5000/api/auth/github'
+            'https://codesense-ai-2bu3.onrender.com/api/auth/github'
         }}
       >
         <GitBranch size={14}/>

@@ -19,7 +19,7 @@ export default function OAuthSuccess({ onLogin }: any) {
     localStorage.setItem('token', token)
 
     axios.get(
-      'http://localhost:5000/api/auth/me',
+      'https://codesense-ai-2bu3.onrender.com/api/auth/me',
       {
         headers: {
           Authorization: `Bearer ${token}`

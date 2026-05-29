@@ -22,7 +22,7 @@ export default function Signup({ onLogin }: { onLogin: (token: string, user: any
     if (password.length < 6) { setError('Password kam se kam 6 characters ka hona chahiye'); return }
     setLoading(true)
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/signup', { name, email, password })
+      const res = await axios.post('https://codesense-ai-2bu3.onrender.com/api/auth/signup', { name, email, password })
       onLogin(res.data.token, res.data.user)
     } catch (e: any) {
       setError(e.response?.data?.error || 'Signup failed. Please try again.')
@@ -191,7 +191,7 @@ export default function Signup({ onLogin }: { onLogin: (token: string, user: any
     className="btn-soc"
     onClick={() => {
       window.location.href =
-        'http://localhost:5000/api/auth/github'
+        'https://codesense-ai-2bu3.onrender.com/api/auth/github'
     }}
   >
     <GitBranch size={14}/>
@@ -202,7 +202,7 @@ export default function Signup({ onLogin }: { onLogin: (token: string, user: any
     className="btn-soc"
     onClick={() => {
       window.location.href =
-        'http://localhost:5000/api/auth/google'
+        'https://codesense-ai-2bu3.onrender.com/api/auth/google'
     }}
   >
     <svg width="14" height="14" viewBox="0 0 24 24">

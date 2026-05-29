@@ -5,7 +5,7 @@ import {
   Upload, GitBranch, Code2, X, FileCode, ChevronDown
 } from 'lucide-react'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://codesense-ai-2bu3.onrender.com/api'
 
 function parseIssues(text: string) {
   const m = text.match(/ISSUES:([\s\S]*?)(?=SUMMARY:|RECOMMENDATIONS:|$)/i)

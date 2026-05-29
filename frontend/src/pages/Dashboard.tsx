@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { Code2, Shield, Upload, Bot, Eye, TrendingUp, AlertTriangle, Star, Zap } from 'lucide-react'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://codesense-ai-2bu3.onrender.com/api'
 
 export default function Dashboard({ user, token }: { user: any; token: string }) {
   const navigate = useNavigate()

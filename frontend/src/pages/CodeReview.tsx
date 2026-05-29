@@ -2,7 +2,7 @@ import { useState, useRef } from 'react'
 import axios from 'axios'
 import { Upload, Play, Copy, Download, CheckCircle, AlertTriangle, RefreshCw, ChevronRight, X } from 'lucide-react'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://codesense-ai-2bu3.onrender.com/api'
 
 const LANGS = ['JavaScript','TypeScript','Python','Java','C++','C#','Go','Ruby','PHP','Rust','Swift','Kotlin']
 

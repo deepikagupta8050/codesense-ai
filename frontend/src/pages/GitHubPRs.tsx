@@ -10,7 +10,7 @@ import {
   Download, History, GitCommit, Activity, Database
 } from 'lucide-react'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://codesense-ai-2bu3.onrender.com/api'
 
 const SCORE_COLOR = (s: number) => s >= 85 ? '#10b981' : s >= 70 ? '#f59e0b' : s >= 50 ? '#f97316' : '#ef4444'
 const SCORE_BG    = (s: number) => s >= 85 ? 'rgba(16,185,129,0.1)' : s >= 70 ? 'rgba(245,158,11,0.1)' : s >= 50 ? 'rgba(249,115,22,0.1)' : 'rgba(239,68,68,0.1)'
@@ -330,7 +330,7 @@ ${scanResult.scan?.dead_code?.map(
               {loadingRepos ? <span className="sp"/> : <RefreshCw size={13}/>} Sync
             </button>
           )}
-          <button className="btn btn-ghost btn-sm" onClick={() => { window.location.href = 'http://localhost:5000/api/auth/github' }}>
+          <button className="btn btn-ghost btn-sm" onClick={() => { window.location.href = 'https://codesense-ai-2bu3.onrender.com/api/auth/github' }}>
             <GitBranch size={13}/> {githubStatus?.connected ? 'Re-connect' : 'Connect GitHub'}
           </button>
           {(prReview || scanResult) && <>

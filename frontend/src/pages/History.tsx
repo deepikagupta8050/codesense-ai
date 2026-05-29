@@ -4,7 +4,7 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { Search, Trash2, Download, Eye, RefreshCw, Filter, ChevronLeft, ChevronRight, Clock, X } from 'lucide-react'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://codesense-ai-2bu3.onrender.com/api'
 
 const langColors: Record<string, string> = {
   JavaScript:'#f59e0b', TypeScript:'#7c3aed', Python:'#3b82f6',

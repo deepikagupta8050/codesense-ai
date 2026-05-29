@@ -142,7 +142,7 @@ export function Settings() {
           {
             title: 'Backend Info',
             items: [
-              { label: 'Backend URL', value: 'http://localhost:5000', note: '' },
+              { label: 'Backend URL', value: 'https://codesense-ai-2bu3.onrender.com', note: '' },
               { label: 'Auth', value: 'JWT Token', note: '7 days validity' },
               { label: 'History Storage', value: 'In-Memory', note: 'Server restart pe clear' },
             ]

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 import { Send, Plus, Trash2, Upload, Code2, Zap, FileText, X } from 'lucide-react'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://codesense-ai-2bu3.onrender.com/api'
 
 const QUICK_ACTIONS = [
   { icon:'💡', label:'Explain this code',       prompt:'Can you explain what this code does and how it works in detail?' },

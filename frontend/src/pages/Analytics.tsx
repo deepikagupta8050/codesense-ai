@@ -4,7 +4,7 @@ import { BarChart, Bar, LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContai
 import { TrendingUp, Download, Info, BarChart3 } from 'lucide-react'
 import jsPDF from 'jspdf'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://codesense-ai-2bu3.onrender.com/api'
 
 const COLORS = ['#f59e0b','#3b82f6','#7c3aed','#ef4444','#10b981','#06b6d4']
 

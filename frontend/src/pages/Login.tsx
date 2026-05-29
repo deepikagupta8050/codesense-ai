@@ -17,7 +17,7 @@ export default function Login({ onLogin }: { onLogin: (token: string, user: any)
     if (!email || !password) { setError('Email aur password required hai'); return }
     setLoading(true)
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', { email, password })
+      const res = await axios.post('https://codesense-ai-2bu3.onrender.com/api/auth/login', { email, password })
       onLogin(res.data.token, res.data.user)
     } catch (e: any) {
       setError(e.response?.data?.error || 'Login failed. Please try again.')
@@ -28,7 +28,7 @@ export default function Login({ onLogin }: { onLogin: (token: string, user: any)
   const demoLogin = async () => {
     setLoading(true)
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', { email: 'demo@codesense.ai', password: 'demo123' })
+      const res = await axios.post('https://codesense-ai-2bu3.onrender.com/api/auth/login', { email: 'demo@codesense.ai', password: 'demo123' })
       onLogin(res.data.token, res.data.user)
     } catch { setError('Demo login failed') }
     setLoading(false)
@@ -164,7 +164,7 @@ export default function Login({ onLogin }: { onLogin: (token: string, user: any)
   className="btn-soc"
   onClick={() => {
     window.location.href =
-      'http://localhost:5000/api/auth/github'
+      'https://codesense-ai-2bu3.onrender.com/api/auth/github'
   }}
 >
               <GitBranch size={15}/> Continue with GitHub
@@ -173,7 +173,7 @@ export default function Login({ onLogin }: { onLogin: (token: string, user: any)
   className="btn-soc"
   onClick={() => {
     window.location.href =
-      'http://localhost:5000/api/auth/google'
+      'https://codesense-ai-2bu3.onrender.com/api/auth/google'
   }}
 >
               <svg width="15" height="15" viewBox="0 0 24 24">
