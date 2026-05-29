@@ -112,10 +112,10 @@ router.get('/google', passport.authenticate('google', { scope: ['profile', 'emai
 
 router.get(
   '/google/callback',
-  passport.authenticate('google', { session: false, failureRedirect: 'http://localhost:3000/login' }),
+  passport.authenticate('google', { session: false, failureRedirect: 'https://codesense-ai-ten.vercel.app/login' }),
   (req, res) => {
     const token = makeToken(req.user)
-    res.redirect(`http://localhost:3000/oauth-success?token=${token}`)
+    res.redirect(`https://codesense-ai-ten.vercel.app/oauth-success?token=${token}`)
   }
 )
 
@@ -126,11 +126,11 @@ router.get('/github', passport.authenticate('github', { scope: ['user:email', 'r
 
 router.get(
   '/github/callback',
-  passport.authenticate('github', { session: false, failureRedirect: 'http://localhost:3000/login' }),
+  passport.authenticate('github', { session: false, failureRedirect: 'https://codesense-ai-ten.vercel.app/login' }),
   (req, res) => {
     const token = makeToken(req.user)
     res.redirect(
-      `http://localhost:3000/github-success?token=${token}&username=${req.user.github_username || req.user.name}`
+      `https://codesense-ai-ten.vercel.app/github-success?token=${token}&username=${req.user.github_username || req.user.name}`
     )
   }
 )
