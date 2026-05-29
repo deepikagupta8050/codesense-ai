@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.local
+
+frontend/node_modules/
+frontend/build/
+
+backend/node_modules/
+
+*.log
+
+backend/database/*.db
+backend/database/*.db-shm
+backend/database/*.db-wal
+
+.vscode/
