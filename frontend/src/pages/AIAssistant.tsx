@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
-import { Send, Plus, Trash2, Upload, Code2, Zap, FileText, X } from 'lucide-react'
+import { Send, Plus, Trash2, Upload, X } from 'lucide-react'
 
 const API = 'https://codesense-ai-2bu3.onrender.com/api'
 
